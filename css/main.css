@@ -240,11 +240,12 @@ header {
 
 #mobile_menu_body li a,
 #mobile_menu_body li ul li a {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 #mobile_menu_body li h2 {
   margin: 2%;
+  font-size: 1.5em;
 }
 
 #mobile_menu:hover #mobile_menu_body {
