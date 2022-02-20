@@ -329,6 +329,7 @@ main {
 
 .entry img {
   width: 100%;
+  height: auto;
   margin-bottom: 2.5%;
 }
 
@@ -537,10 +538,6 @@ footer p {
     justify-content: space-between;
   }
 
-  .post .entry {
-    align-items: flex-start;
-  }
-
   .post .entry_body img {
     width: 50%;
     padding-left: 1%;
@@ -554,7 +551,11 @@ footer p {
     font-size: 1em;
   }
 
-  links a {
+  .links {
+    justify-content: flex-start;
+  }
+
+  .links a {
     font-size: 1em;
   }
 
