@@ -170,7 +170,7 @@ header {
   padding: 0;
   color: #ffffff;
   letter-spacing: -2px;
-  font-size: 5em;
+  font-size: 2.25em;
 }
 
 #logo a {
@@ -184,43 +184,7 @@ header {
 /* Menu */
 
 #menu {
-  padding: 0;
-  list-style-type: none;
   display: none;
-}
-
-#menu ul {
-  float: right;
-  margin: 0;
-  padding: 20px 0px 0px 0px;
-  line-height: normal;
-}
-
-#menu li {
-  float: left;
-}
-
-#menu a {
-  display: block;
-  line-height: 100px;
-  margin-right: 1px;
-  padding: 0px 20px 0px 20px;
-  text-decoration: none;
-  text-align: center;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #1f1f1f;
-  border: none;
-}
-
-#menu a:hover,
-#menu .current_page_item a {
-  background: url(../images/img01.jpg) repeat;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 /* Mobile menu */
@@ -231,8 +195,9 @@ header {
 
 #mobile_menu_anchor {
   border: none;
-  background: none;
-  font-size: 3em;
+  background: url(../images/img01.jpg) repeat;
+  color: #ffffff;
+  font-size: 1.5em;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -332,7 +297,8 @@ main {
 
 .post .title {
   letter-spacing: -1px;
-  font-size: 4em;
+  font-size: 1.75em;
+  flex: 1;
 }
 
 .post .title a {
@@ -342,15 +308,15 @@ main {
 }
 
 .post .meta {
+  flex: 0 1 auto;
   font-family: "Abel", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .post .meta p {
-  font-size: 1.5em;
+  font-size: 0.5em;
   line-height: 1.5em;
 }
 
@@ -366,7 +332,7 @@ main {
 }
 
 .entry p {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .links {
@@ -383,7 +349,7 @@ main {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* Sidebar */
@@ -404,7 +370,7 @@ footer {
 footer p {
   width: fit-content;
   letter-spacing: 1px;
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
   color: #5e5e5e;
   margin: 2.5% 0;
@@ -412,25 +378,24 @@ footer p {
 
 @media (min-width: 700px) {
   #logo {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   #mobile_menu_anchor {
-    font-size: 2.4em;
+    font-size: 2em;
   }
 
   .post .title {
-    letter-spacing: -1px;
-    font-size: 3.2em;
+    font-size: 2.25em;
   }
 
   .post .meta p {
-    font-size: 1.25em;
-    line-height: 1.25em;
+    font-size: 1em;
+    line-height: 1em;
   }
 
   .entry p {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .links a {
@@ -443,8 +408,43 @@ footer p {
 }
 
 @media (min-width: 900px) {
+  /* Menu */
+
   #menu {
+    padding: 0;
+    list-style-type: none;
     display: initial;
+  }
+
+  #menu ul {
+    float: right;
+  }
+
+  #menu li {
+    float: left;
+  }
+
+  #menu a {
+    display: block;
+    line-height: 100px;
+    margin-right: 1px;
+    padding: 0 1.25em;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #1f1f1f;
+    border: none;
+  }
+
+  #menu a:hover,
+  #menu .current_page_item a {
+    background: url(../images/img01.jpg) repeat;
+    text-decoration: none;
+    color: #ffffff;
   }
 
   #mobile_menu {
@@ -459,54 +459,29 @@ footer p {
   }
 
   #sidebar ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
   }
 
-  #sidebar li {
-    margin: 0;
-    padding: 0;
-  }
-
   #sidebar li ul {
-    margin: 0px 0px;
-    padding-bottom: 30px;
+    padding-bottom: 2em;
   }
 
   #sidebar li li {
-    line-height: 40px;
+    line-height: 2.5em;
     border-bottom: 1px solid #e7ebed;
-    margin: 0px 0px;
-    border-left: none;
     width: 80%;
   }
 
-  #sidebar li li span {
-    display: block;
-    margin-top: -20px;
-    padding: 0;
-    font-size: 11px;
-    font-style: italic;
-  }
-
   #sidebar li li a {
-    padding: 0px 0px 0px 20px;
+    padding-left: 1.25em;
     background: url(../images/img04.jpg) no-repeat left 50%;
   }
 
   #sidebar h2 {
-    height: 38px;
-    padding: 20px 0px 0px 0px;
+    height: 1em;
     letter-spacing: -0.5px;
     font-size: 2em;
     color: #222222;
-  }
-
-  #sidebar p {
-    margin: 0 0px;
-    padding: 0px 30px 20px 30px;
-    text-align: justify;
   }
 
   #sidebar a {
@@ -527,6 +502,7 @@ footer p {
 
   .post .meta p {
     font-size: 1em;
+    line-height: 1em;
   }
 
   .post .entry p {
@@ -534,7 +510,7 @@ footer p {
   }
 
   .links a {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 }
 
@@ -564,27 +540,24 @@ footer p {
     align-items: flex-start;
   }
 
-  /* .post .entry_body {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-between;
-  } */
-
   .post .entry_body img {
     width: 50%;
     padding-left: 1%;
   }
-
-  /* .post .entry_body .entry_text {
-    float: left;
-  } */
 
   .post .entry_body img {
     float: right;
   }
 
   .post .entry_body .entry_text p {
+    font-size: 1em;
+  }
+
+  links a {
+    font-size: 1em;
+  }
+
+  footer p {
     font-size: 1em;
   }
 }
